@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="font_icon/fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <div id="taskbar">
+        <div class="icons ">
+            <a href="cart.html">
+                <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+                <span id="slsp"></span>
+            </a>
+        </div>
+    </div>
+
+    <div id="header" onload="loadAnh()">
+        <img id="img" src="hinh/h0.jpg" />
+        <div id="control">
+            <!-- <input  class="back" type="button" value="Back" onclick="back();" /> -->
+            <span class="back" value="Back" onclick="back()"> <i class="fa-solid fa-chevron-left"></i></span>
+            <i class="fa-regular fa-circle" onclick="Anh0()"></i>
+            <i class="fa-regular fa-circle" onclick="Anh1()"></i>
+            <i class="fa-regular fa-circle" onclick="Anh2()"></i>
+            <i class="fa-regular fa-circle" onclick="Anh3()"></i>
+            <i class="fa-regular fa-circle" onclick="Anh4()"></i>
+            <i class="fa-regular fa-circle" onclick="Anh5()"></i>
+            <i class="fa-regular fa-circle" onclick="Anh6()"></i>
+            <i class="fa-regular fa-circle" onclick="Anh7()"></i>
+            <i class="fa-regular fa-circle" onclick="Anh8()"></i>
+            <span class="next" value="Next" onclick="next();"> <i class="fa-solid fa-chevron-right"></i></span>
+
+            <!-- <input class="next" type="button" value="Next" onclick="next();"/> -->
+        </div>
+        <span></span>
+        <!-- <input type="button" value="First" onclick="first();" />
+    <input type="button" value="Back" onclick="back();" />
+    <input type="button" value="Next" onclick="next();"/>
+    <input type="button" value="Last" onclick="last();" /> -->
+    </div>
+
+    <div id="container">
+        <ul class="products">
+            <li class="parent-card">
+
+                <div>
+                    <img src="image/h1.jpg " alt="" class="img" h3{sản phẩm}>
+                </div>
+                <p class="font_chu  ten-san-pham">Wave Alpha 110cc</p>
+                <div class="price">
+                    <p> <span class="gia-san-pham">19.000.000đ</span></p>
+                    <input type="hidden" name="price" value="19000000" />
+                </div>
+
+                <button class="btn btn-add-cart">Add To Card</button>
+
+            </li>
+
+            <li class="parent-card">
+
+                <div>
+                    <img src="image/h2.png " alt="" class="img" h3{sản phẩm}>
+                </div>
+                <p class="font_chu  ten-san-pham"> Super Cub C125</p>
+                <div class="price">
+                    <p> <span class="gia-san-pham">87.890.000 VNĐ</span></p>
+                    <input type="hidden" name="price" value="87.890.000" />
+                </div>
+
+                <button class="btn btn-add-cart">Add To Card</button>
+
+            </li>
+
+            <li class="parent-card">
+
+                <div>
+                    <img src="image/h33.png" alt="" class="img" h3{sản phẩm}>
+                </div>
+                <p class="font_chu  ten-san-pham">Sh Mode 125cc</p>
+                <div class="price">
+                    <p> <span class="gia-san-pham">58.190.000 VNĐ</span></p>
+                    <input type="hidden" name="price" value="58.190.000" />
+                </div>
+
+                <button class="btn btn-add-cart">Add To Card</button>
+
+            </li>
+
+            <li class="parent-card">
+
+                <div>
+                    <img src="image/h4.jpg" alt="" class="img" h3{sản phẩm}>
+                </div>
+                <p class="font_chu  ten-san-pham">Rebel 1100</p>
+                <div class="price">
+                    <p> <span class="gia-san-pham">499.000.000 VNĐ</span></p>
+                    <input type="hidden" name="price" value="499.000.000" />
+                </div>
+
+                <button class="btn btn-add-cart">Add To Card</button>
+
+            </li>
+
+            <li class="parent-card">
+
+                <div>
+                    <img src="image/h5.png" alt="" class="img" h3{sản phẩm}>
+                </div>
+                <p class="font_chu  ten-san-pham">Winner X</p>
+                <div class="price">
+                    <p> <span class="gia-san-pham">46.160.000 VNĐ</span></p>
+                    <input type="hidden" name="price" value="46.160.000" />
+                </div>
+
+                <button class="btn btn-add-cart">Add To Card</button>
+
+            </li>
+
+            <li class="parent-card">
+
+                <div>
+                    <img src="image/h6.png " alt="" class="img" h3{sản phẩm}>
+                </div>
+                <p class="font_chu  ten-san-pham">Air Blade 125/160</p>
+                <div class="price">
+                    <p> <span class="gia-san-pham">42.790.000 VNĐ</span></p>
+                    <input type="hidden" name="price" value="19000000" />
+                </div>
+
+                <button class="btn btn-add-cart">Add To Card</button>
+
+            </li>
+
+            <li class="parent-card">
+
+                <div>
+                    <img src="image/h7.png" alt="" class="img" h3{sản phẩm}>
+                </div>
+                <p class="font_chu  ten-san-pham">LEAD 125cc</p>
+                <div class="price">
+                    <p> <span class="gia-san-pham">40.290.000 VNĐ</span></p>
+                    <input type="hidden" name="price" value="40.290.000" />
+                </div>
+
+                <button class="btn btn-add-cart">Add To Card</button>
+
+            </li>
+
+            <li class="parent-card">
+
+                <div>
+                    <img src="image/h8.png" alt="" class="img" h3{sản phẩm}>
+                </div>
+                <p class="font_chu  ten-san-pham">Honda VARIO 160</p>
+                <div class="price ">
+                    <p> <span  class="gia-san-pham">51.990.000 VNĐ</span></p>
+                    <input type="hidden" name="price" value="51.990.000" />
+                </div>
+
+                <button class="btn btn-add-cart">Add To Card</button>
+
+            </li>
+
+        </ul>
+
+        <div id="test">
+            <img id="hinhtest" src="" alt="" width="500px" height="500px">
+        </div>
+
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
